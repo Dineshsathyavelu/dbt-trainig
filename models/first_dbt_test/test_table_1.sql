@@ -1,3 +1,3 @@
-{{ ref(materialized = 'view') }}
+{{ config(materialized = 'view') }}
 
 select * from NEW_DB.NEW_SCHEMA_TEST.TEST_TABLE_1
