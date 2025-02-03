@@ -19,3 +19,9 @@ models:
             tests:
                 - unique
                 - not_null
+
+    - name: staging
+      database: {{('source_db')}}
+      schema: public
+      tables: 
+        - name: emp
