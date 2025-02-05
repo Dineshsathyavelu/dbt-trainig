@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: raw_customers
+    columns:
+      - name: CUSTOMER_ID
+        tests:
+          - unique
+          - not_null
+      - name: customer_name
+        tests:
+          - not_null
+      - name: SEGMENT
+        tests:
+          - accepted_values:
+              values:
+                - "Consumer"
+                - "Home Office"
+                - "Corporate"
