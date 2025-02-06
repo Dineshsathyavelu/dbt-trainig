@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: This model is a combination of three other models.
+    columns:
+      - name: CUSTOMER_ID
+        description: This column conatins unique id for each customer to distinguish them.
+      - name: SHIP_MODE
+        description: '{{ doc("SHIP_MODE") }}'

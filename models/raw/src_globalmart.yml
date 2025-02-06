@@ -8,7 +8,11 @@ sources:
       - name: customer
         columns:
           - name: customer_id
+            description: This column uniquely identifies each customer
             tests:
               - unique
       - name: orders
+        columns:
+          - name: ORDER_ID
+            description: This column uniquely identifies each orders
       - name: product
